@@ -32,6 +32,7 @@ fn main() {
 // create `Dict`s from structs by deriving `IntoDict`;
 fn dummy_data() -> Content {
     let mut hashmap = HashMap::new();
+    // Key must not contains blank character
     hashmap.insert(String::from("key1"), String::from("value1"));
     hashmap.insert(String::from("key2"), String::from("value2"));
     Content {
